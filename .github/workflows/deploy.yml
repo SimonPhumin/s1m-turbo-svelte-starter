@@ -1,0 +1,29 @@
+---
+name: S1M Deploy
+on:
+    workflow_dispatch:
+
+jobs:
+    # Deploy sanity studio
+    deploy:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: apps/cms
+        env:
+            SANITY_AUTH_TOKEN: ${{ secrets.SANITY_DEPLOY_TOKEN }}
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '22'
+            - name: Install pnpm
+              uses: pnpm/action-setup@v3
+              with:
+                  version: 10
+            - name: Install dependencies
+              run: pnpm install
+            - name: Deploy to Sanity
+              run: pnpm run deploy

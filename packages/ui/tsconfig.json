@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"@s1m/ui": ["./src/"],
+			"@s1m/ui/*": ["./src/*"],
+			"@s1m/data/*": ["../data/src/*"]
+		}
+	}
+}

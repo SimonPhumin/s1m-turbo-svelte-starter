@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'GT America';
+	src: url('../fonts/gt-america.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Eiko';
+	src: url('../fonts/eiko.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

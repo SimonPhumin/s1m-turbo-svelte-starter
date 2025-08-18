@@ -1,0 +1,8 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"@s1m/data/*": ["./src/*"]
+		},
+		"esModuleInterop": true
+	}
+}

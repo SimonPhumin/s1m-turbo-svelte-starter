@@ -1,0 +1,37 @@
+{
+	"name": "@s1m/ui",
+	"type": "module",
+	"module": "index.ts",
+	"main": "index.ts",
+	"exports": {
+		"./globals.css": "./src/styles/globals.css",
+		"./postcss.config": "./postcss.config.mjs",
+		"./components/*": "./src/components/*.svelte",
+		"./styles/*": "./src/styles/*.css",
+		"./fonts/*": "./src/fonts/*.woff2",
+		".": {
+			"types": "./index.ts",
+			"svelte": "./index.ts"
+		}
+	},
+	"scripts": {
+		"lint": "eslint . --max-warnings 0"
+	},
+	"devDependencies": {
+		"@s1m/eslint-config": "workspace:*",
+		"@s1m/typescript-config": "workspace:*",
+		"@tailwindcss/postcss": "^4.1.12",
+		"@tailwindcss/vite": "^4.1.12",
+		"@turbo/gen": "^2.5.6",
+		"@types/node": "^24.3.0",
+		"autoprefixer": "^10.4.21",
+		"eslint": "^9.33.0",
+		"svelte": "^5.38.1",
+		"tailwindcss": "^4.1.12",
+		"typescript": "^5.9.2"
+	},
+	"dependencies": {
+		"bits-ui": "^2.9.3",
+		"phosphor-svelte": "^3.0.1"
+	}
+}

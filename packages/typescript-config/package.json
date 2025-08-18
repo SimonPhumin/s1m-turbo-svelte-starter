@@ -1,0 +1,10 @@
+{
+	"name": "@s1m/typescript-config",
+	"private": true,
+	"type": "module",
+	"license": "MIT",
+	"module": "esnext",
+	"publishConfig": {
+		"access": "public"
+	}
+}
