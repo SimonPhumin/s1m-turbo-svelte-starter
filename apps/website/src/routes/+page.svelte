@@ -10,9 +10,11 @@
 </script>
 
 {#if page}
-	<section class="space-y-4">
-		<h1 class="sr-only">S1M-Turbo-Svelte-Monorepo</h1>
-
+	<section class="pt-8 pb-12">
+		<h1 class="text-4xl font-bold">S1M-Turbo-Svelte-Monorepo</h1>
+		<p>
+			Wecome to the S1M-Turbo-Svelte-Monorepo. This is a test website to test the monorepo setup.
+		</p>
 		<!-- Page Body Section -->
 	</section>
 {/if}

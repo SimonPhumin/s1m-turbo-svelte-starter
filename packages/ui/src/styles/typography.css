@@ -1,8 +1,6 @@
 @layer base {
 	/* Headings */
-	h1 {
-		@apply font-serif;
-	}
+	h1,
 	h2,
 	h3,
 	h4,
